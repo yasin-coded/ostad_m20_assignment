@@ -1,7 +1,9 @@
+import Navbar from "./components/Navbar";
+
 function App() {
   return (
-    <div>
-      <h1 class="text-3xl font-bold text-red-500">Shopping Cart</h1>
+    <div className="min-h-screen bg-gray-100">
+      <Navbar onCartClick={() => console.log("open cart")} />
     </div>
   );
 }
