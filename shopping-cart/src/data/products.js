@@ -59,14 +59,14 @@ export const products = [
         id: 9,
         title:"Lenovo Legion Tower 5 Gaming Desktop, AMD Ryzen 7 5800, NVIDIA GeForce RTX 3070 8GB, 1TB SSD, 16GB DDR4, WiFi Ready, Windows 11 Home",
         category:"Gaming PC",
-        price: "1699.99",
+        price: 1699.99,
         image: "/Lenovo.png"
     },
     {
         id:10,
         title:"ASUS ROG Strix GA15DH Gaming Desktop, AMD Ryzen 7 4800H, NVIDIA GeForce GTX 1660 Ti, 1TB SSD, 16GB DDR4, WiFi Ready, Windows 11 Home",
         category:"Gaming PC",
-        price:"1299.99",
+        price:1299.99,
         image:"/Asus.png"
     }
 ]
