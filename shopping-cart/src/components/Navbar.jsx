@@ -6,7 +6,7 @@ function Navbar({ onCartClick }) {
   const { totalItems } = useCart();
 
   return (
-    <header className="bg-nav text-white">
+    <header className="bg-nav text-white sticky top-0 z-30">
       <div className="flex flex-wrap items-center gap-2 px-3 py-2.5 md:flex-nowrap md:gap-3 md:px-4 md:py-3">
         <Link to="/" className="shrink-0">
           <img src="/amazon-white-logo.png" alt="Amazon home" className="h-8" />
