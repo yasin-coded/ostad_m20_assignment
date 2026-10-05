@@ -1,6 +1,12 @@
+import { toast } from "react-toastify";
+import { useCart } from "../hooks/useCart";
+
 function ProductCard({ product }) {
+  const { addToCart } = useCart();
+
   const handleAdd = () => {
-    console.log("add", product.id);
+    addToCart(product);
+    toast.success("Item has been successfully added to your cart!");
   };
 
   return (

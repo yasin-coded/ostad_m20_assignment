@@ -1,8 +1,9 @@
 import { Link } from "react-router-dom";
 import { MapPin, Search, ShoppingCart } from "lucide-react";
+import { useCart } from "../hooks/useCart";
 
 function Navbar({ onCartClick }) {
-  const totalItems = 0; 
+  const { totalItems } = useCart();
 
   return (
     <header className="bg-nav text-white">
