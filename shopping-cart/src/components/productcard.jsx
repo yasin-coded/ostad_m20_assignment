@@ -19,7 +19,7 @@ function ProductCard({ product }) {
         <p className="text-sm text-gray-600">Sold by Amazon</p>
         <button
             onClick={handleAdd}
-            className="mt-2 self-start rounded-full bg-brand px-6 py-3 font-bold text-black hover:bg-amber-400"
+            className="mt-2 self-start rounded-full bg-brand px-6 py-3 font-bold text-black hover:bg-amber-500  ease-in-out duration-300 cursor-pointer"
         >
             Add to Cart
         </button>
