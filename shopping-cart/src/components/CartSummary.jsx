@@ -1,9 +1,13 @@
 import { useCart } from "../hooks/useCart";
+import { toast } from "react-toastify";
 
 function CartSummary(){
     const { cart, totalItems, totalPrice }= useCart();
     const discount=0 ;
     const finalTotal= totalPrice-discount;
+    const handleApplyPromo = () => {
+        toast.error("Invalid promo code!");
+    };
 
     return (
         <aside className="flex flex-col gap-4 bg-white xl: w-96">
@@ -24,7 +28,9 @@ function CartSummary(){
             className="w-full rounded border border-gray-300 px-4 py-3"
             />
 
-            <button className="w-full cursor-pointer rounded bg-violet-600 py-3 font-bold text-white hover:bg-violet-900 ease-in-out duration-300">
+            <button 
+            onClick={handleApplyPromo}
+            className="w-full cursor-pointer rounded bg-violet-600 py-3 font-bold text-white hover:bg-violet-900 ease-in-out duration-300">
                 Enter Promo Code
             </button>
 
