@@ -5,6 +5,7 @@ import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import CartSidebar from "./components/CartSidebar";
 import { useState } from "react";
+import CartPage from "./pages/CartPage";
 
 function App() {
 
@@ -18,7 +19,7 @@ function App() {
 
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/mycart" element={<h1 className="p-4 text-2xl">Cart</h1>}/>
+        <Route path="/mycart" element={<CartPage/>} />
       </Routes>
     </div>
   );
