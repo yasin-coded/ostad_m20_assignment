@@ -23,7 +23,7 @@ function CartItem({ item }) {
                         <Plus size={14} />
                     </button>
                 </div>
-                {/* Trash button wraps the icon as a child, not self-closing */}
+
                 <button onClick={() => removeFromCart(item.id)} aria-label="Remove item" className="p-1 text-red-600 hover:text-red-800">
                     <Trash2 size={16} />
                 </button>

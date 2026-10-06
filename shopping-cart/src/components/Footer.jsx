@@ -8,7 +8,7 @@ function Footer() {
   return (
     <footer className="bg-footer text-white">
       <div className="mx-auto grid max-w-7xl grid-cols-2 gap-8 px-6 py-10 md:grid-cols-[2fr_1fr_1fr_1fr]">
-        {/* Brand block: full width on phones, first column on desktop */}
+
         <div className="col-span-2 md:col-span-1">
           <img src="/amazon-white-logo.png" alt="Amazon" className="h-10" />
           <p className="mt-4">ACME Industries Ltd.</p>
