@@ -11,7 +11,7 @@ function CartSummary(){
     };
 
     return (
-        <aside className="flex flex-col gap-4 bg-white xl: w-96">
+        <aside className="flex flex-col gap-4 bg-white w-full max-w-full xl:w-96">
             <p className="text-lg">
                 Subtotal (before Discount): <strong>${totalPrice.toFixed(2)}</strong>
             </p>
@@ -31,7 +31,7 @@ function CartSummary(){
 
             <button 
             onClick={handleApplyPromo}
-            className="w-full cursor-pointer rounded bg-violet-600 py-3 font-bold text-white hover:bg-violet-900 ease-in-out duration-300">
+            className="w-full cursor-pointer rounded bg-violet-600 py-3 font-bold text-white md:grid-cols-[2fr_1fr_1fr_1fr] hover:bg-violet-900 ease-in-out duration-300">
                 Enter Promo Code
             </button>
 
