@@ -29,7 +29,7 @@ export const products = [
       "CyberPowerPC Gamer Xtreme VR Gaming PC, Intel Core i9-13900KF 3.0GHz, GeForce RTX 4070 12GB, 1TB NVMe SSD, 16GB DDR5,Wi-Fi Ready, Windows 11 Home (GXiVR8080A36)",
     category: "Gaming PC",
     price: 2202.63,
-    image: "/Cyberpower 2.png",
+    image: "/Cyberpower2.png",
   },
   {
     id: 5,
@@ -45,7 +45,7 @@ export const products = [
       "iBUYPOWER Trace Mesh Gaming PC Computer Desktop, Intel Core i7 14700F, NVIDIA GeForce RTX 4060 Ti 8GB, 1TB NVMe SSD, 32GB DDR5 5600 RGB, WiFi Ready, Windows 11 Home",
     category: "Gaming PC",
     price: 1299.99,
-    image: "/iBuyPower 2.png",
+    image: "/iBuyPower2.png",
   },
   {
     id: 7,
