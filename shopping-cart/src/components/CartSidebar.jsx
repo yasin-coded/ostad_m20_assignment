@@ -16,7 +16,7 @@ function CartSidebar({ isOpen, onClose }) {
         }`}
       />
 
-      {/* Drawer: slides in from the right */}
+
       <aside
         inert={!isOpen}
         className={`fixed right-0 top-0 z-50 flex h-full w-64 flex-col overflow-y-auto bg-white transition-transform duration-300 ${
