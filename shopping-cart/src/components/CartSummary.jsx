@@ -5,6 +5,7 @@ function CartSummary(){
     const { totalItems, totalPrice }= useCart();
     const discount=0 ;
     const finalTotal= totalPrice-discount;
+    const isEmpty = totalItems=== 0;
     const handleApplyPromo = () => {
         toast.error("Invalid promo code!");
     };
@@ -34,7 +35,9 @@ function CartSummary(){
                 Enter Promo Code
             </button>
 
-            <button className="w-full cursor-pointer rounded bg-brand py-3 font-bold text-black disabled:cursor-not-allowed disabled:bg-gray-300 disabled:text-gray-500 hover:bg-amber-600 ease-in-out duration-300"
+            <button 
+            disabled={isEmpty}
+            className="w-full cursor-pointer rounded bg-brand py-3 font-bold text-black disabled:cursor-not-allowed disabled:bg-gray-300 disabled:text-gray-500 hover:bg-amber-600 ease-in-out duration-300"
             >
                 Proceed to Checkout
             </button>

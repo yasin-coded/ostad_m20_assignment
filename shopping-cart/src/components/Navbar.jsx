@@ -33,7 +33,7 @@ function Navbar({ onCartClick }) {
           </button>
         </div>
 
-        <div className="hidden shrink-0 whitespace-nowrap text-xs leading-tight cursor-pointer">
+        <div className="hidden text-xs leading-tight md:block">
           <p>Hello, sign in</p>
           <p className="text-sm font-bold">Account & Lists</p>
         </div>

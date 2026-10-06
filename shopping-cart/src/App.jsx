@@ -13,7 +13,7 @@ function App() {
   const [isCartOpen, setIsCartOpen] = useState(false);
 
   return (
-    <div className="min-h-screen bg-gray-100">
+    <div className="flex min-h-screen flex-col bg-gray-100">
       <ToastContainer position="top-center" theme="colored" />
       <Navbar onCartClick={() => setIsCartOpen(true)} />
       <CartSidebar isOpen= {isCartOpen} onClose= {() => setIsCartOpen(false)} />
