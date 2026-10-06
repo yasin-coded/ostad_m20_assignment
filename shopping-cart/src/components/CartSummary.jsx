@@ -2,7 +2,7 @@ import { useCart } from "../hooks/useCart";
 import { toast } from "react-toastify";
 
 function CartSummary(){
-    const { cart, totalItems, totalPrice }= useCart();
+    const { totalItems, totalPrice }= useCart();
     const discount=0 ;
     const finalTotal= totalPrice-discount;
     const handleApplyPromo = () => {

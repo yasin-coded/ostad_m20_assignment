@@ -6,6 +6,7 @@ import "react-toastify/dist/ReactToastify.css";
 import CartSidebar from "./components/CartSidebar";
 import { useState } from "react";
 import CartPage from "./pages/CartPage";
+import Footer from "./components/Footer";
 
 function App() {
 
@@ -17,10 +18,15 @@ function App() {
       <Navbar onCartClick={() => setIsCartOpen(true)} />
       <CartSidebar isOpen= {isCartOpen} onClose= {() => setIsCartOpen(false)} />
 
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/mycart" element={<CartPage/>} />
-      </Routes>
+      <div className="flex-1">
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/mycart" element={<CartPage/>} />
+        </Routes>
+      </div>
+
+      <Footer />
+
     </div>
   );
 }
