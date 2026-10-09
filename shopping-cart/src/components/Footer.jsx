@@ -21,7 +21,7 @@ function Footer() {
             <ul className="flex flex-col gap-2">
               {column.links.map((link) => (
                 <li key={link}>
-                  {/* Decorative link, like the reference: goes nowhere */}
+
                   <a
                     href="#"
                     onClick={(event) => event.preventDefault()}
